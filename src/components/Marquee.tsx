@@ -3,6 +3,7 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 //data
 import { skills } from "./../../data/index";
+import Title from "./Title";
 
 const oneThirdLength = Math.floor(skills.length / 3);
 
@@ -31,12 +32,12 @@ const Marquee = () => {
   });
 
   return (
-    <section className="relative my-10 md:my-20 text-white overflow-hidden">
-      <h1 className="text-2xl my-20 text-center">skills</h1>
-      <div className="marquee h-52 w-[100dvw] overflow-hidden relative">
+    <section className="relative overflow-hidden">
+      <Title>Skills</Title>
+      <div className="marquee h-auto w-[100dvw] overflow-hidden relative">
         <div className="gradient-edge" />
         <div className="gradient-edge" />
-        <div className="space-y-5 md:space-y-10 text-amber-500">
+        <div className="space-y-5 md:space-y-10 text-amber-500 mt-48">
           <div ref={sliderRef} className="keen-slider">
             {skills
               .slice(0, oneThirdLength)

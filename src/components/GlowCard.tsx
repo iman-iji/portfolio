@@ -38,7 +38,7 @@ const GlowCard = ({ index, children }: Props) => {
     <div
       ref={(el) => (cardRefs.current[index] = el)}
       onMouseMove={handleMouseMove(index as number)}
-      className="card border border-gray-900 bg-black timeline-card rounded-xl p-10 mb-5 break-inside-avoid-column flex flex-col-reverse xl:flex-row xl:gap-20 gap-10 justify-between"
+      className="card border border-gray-900 bg-black timeline-card rounded-xl p-10 mb-5 break-inside-avoid-column flex xl:flex-row xl:gap-20 gap-10 justify-between"
     >
       {/* <div className="pointer-events-none absolute w-full h-full -translate-x-1/2 -translate-y-1/2 blur-[10px] saturate-[200] left-1/2 top-1/2"></div> */}
       {/* <div className="flex items-center gap-1 mb-5">

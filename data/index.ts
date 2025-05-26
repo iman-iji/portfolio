@@ -170,17 +170,9 @@ export const skills = [
 
 export const expCards = [
   {
-    review:
-      "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
-    logoPath:
-      "https://images.pexels.com/photos/3689532/pexels-photo-3689532.jpeg?auto=compress&cs=tinysrgb&w=600",
-    title: "Frontend Developer",
     date: "January 2023 - Present",
-    responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
-    ],
+    logoPath: "/src/assets/photo.jpg",
+    description:
+      "Hi, I'm Iman — a junior front-end developer with a big passion for building clean, responsive, and user-friendly websites. Although I'm just starting out and don't have professional experience yet, I've spent a lot of time learning modern web technologies like HTML, CSS, JavaScript, and React. I enjoy turning ideas into real products and I'm always excited to take on new challenges that help me grow as a developer. I'm a quick learner, a good team player, and always ready to improve.",
   },
 ];
