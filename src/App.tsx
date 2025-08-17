@@ -14,7 +14,7 @@ function App() {
     ScrollSmoother.create({
       wrapper: ".main",
       content: ".content",
-      smooth: 2,
+      smooth: 3,
       effects: true, // Enables data-speed and data-lag attributes
       smoothTouch: 0.1,
       normalizeScroll: true,

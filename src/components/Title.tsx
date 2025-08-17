@@ -17,34 +17,37 @@ const Title = ({ children, className }: Props) => {
   const titleRef = useRef<HTMLHeadingElement>(null);
 
   useGSAP(() => {
-    SplitText.create(titleRef.current, {
-      type: "chars",
-      autoSplit: true,
-
-      onSplit: (self) => {
-        gsap.to(self.chars, {
-          color: "orange",
-          duration: 0.3,
-          stagger: 0.1,
-          scrollTrigger: {
-            trigger: titleRef.current,
-            start: "top bottom",
-            end: "bottom top",
-            scrub: true,
-          },
-        });
+    const tl = gsap.timeline({
+      delay: 1,
+      scrollTrigger: {
+        trigger: titleRef.current,
+        start: "top 60%",
+        end: "top-=50% top",
+        scrub: 1.5,
       },
+    });
+
+    tl.to(titleRef.current, {
+      duration: 1,
+      opacity: 1,
+      clipPath: "polygon(0% 0%, 100% 0, 100% 100%, 0% 100%)",
+      ease: "circ.out",
     });
   });
 
   return (
-    <div>
-      <h2
+    <div className="general-title">
+      <div
+        style={{
+          clipPath: "polygon(50% 0, 50% 0, 50% 100%, 50% 100%)",
+        }}
+        className={`${className} border-[.5vw] w-fit text-nowrap opacity-0`}
         ref={titleRef}
-        className={`tracking-wider font-semibold text-5xl lg:text-8xl ${className}`}
       >
-        {children}
-      </h2>
+        <div className="pb-5 md:px-14 px-3 md:pt-0 pt-3 bg-[#383838]">
+          <h2 className="text-center">{children}</h2>
+        </div>
+      </div>
     </div>
   );
 };

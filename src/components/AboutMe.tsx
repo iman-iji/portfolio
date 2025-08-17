@@ -53,20 +53,15 @@ const AboutMe = () => {
     });
 
     SplitText.create(".description", {
-      type: "chars",
+      type: "lines",
       autoSplit: true,
       onSplit: (self) => {
-        return gsap.from(self.chars, {
-          yPercent: "random([-200,200])",
-          xPercent: "random([-200,200])",
+        return gsap.from(self.lines, {
+          y: 50,
           opacity: 0,
           paused: true,
           ease: "circ",
-          duration: 5,
-          stagger: {
-            amount: 0.5,
-            from: "random",
-          },
+          stagger: 0.5,
           scrollTrigger: {
             trigger: ".description",
             start: "top bottom",
