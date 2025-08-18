@@ -131,3 +131,9 @@
     @apply 2xl:text-[8.5rem] md:text-8xl text-5xl font-bold uppercase leading-[9vw] tracking-[-.35vw] flex justify-center;
   }
 }
+/* icons */
+.icon {
+  color: black; /* حالا همه pathها و shapes مشکی می‌شوند */
+  width: 50px;
+  height: 50px;
+}

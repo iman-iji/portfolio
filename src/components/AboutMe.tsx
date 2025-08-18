@@ -1,14 +1,12 @@
 // gsap
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SplitText from "gsap/SplitText";
 // import TitleHeader from "../components/TitleHeader";
 import GlowCard from "./GlowCard";
 import { expCards } from "../../data";
 import Title from "./Title";
 
-gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(SplitText);
 
 const AboutMe = () => {
@@ -76,7 +74,7 @@ const AboutMe = () => {
   return (
     <section className="flex-center ">
       <div className="w-full h-full">
-        <Title>About me</Title>
+        <Title className="text-blue-500">About me</Title>
         <div className="mt-12 relative">
           <div className="relative z-50 xl:space-y-32 space-y-10">
             {expCards.map((card, index) => (

@@ -2,10 +2,8 @@ import { useRef } from "react";
 // gsap
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SplitText from "gsap/SplitText";
 
-gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(SplitText);
 
 type Props = {
@@ -41,10 +39,10 @@ const Title = ({ children, className }: Props) => {
         style={{
           clipPath: "polygon(50% 0, 50% 0, 50% 100%, 50% 100%)",
         }}
-        className={`${className} border-[.5vw] w-fit text-nowrap opacity-0`}
+        className={`${className} border-[.5vw] w-fit text-nowrap opacity-0 bg-[#000000]`}
         ref={titleRef}
       >
-        <div className="pb-5 md:px-14 px-3 md:pt-0 pt-3 bg-[#383838]">
+        <div className="pb-5 md:px-14 px-3 md:pt-0 pt-3 ">
           <h2 className="text-center">{children}</h2>
         </div>
       </div>

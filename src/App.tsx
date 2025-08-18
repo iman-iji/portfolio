@@ -1,14 +1,13 @@
-import { useLayoutEffect } from "react";
 import AboutMe from "./components/AboutMe";
 import Hero from "./components/Hero";
 import Marquee from "./components/Marquee";
 import Projects from "./components/Projects";
 //gsap
 import gsap from "gsap";
-import ScrollSmoother from "gsap/ScrollSmoother";
 import { useGSAP } from "@gsap/react";
+import { ScrollSmoother, ScrollTrigger } from "gsap/all";
 
-gsap.registerPlugin(ScrollSmoother);
+gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 function App() {
   useGSAP(() => {
     ScrollSmoother.create({
@@ -24,6 +23,7 @@ function App() {
     <main className="main">
       <div className="content">
         <Hero />
+
         <Marquee />
         <AboutMe />
         <Projects />

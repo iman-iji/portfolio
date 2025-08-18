@@ -9,11 +9,27 @@ import { useGSAP } from "@gsap/react";
 const Hero = () => {
   const textRef = useRef<HTMLDivElement>(null);
   useGSAP(() => {
+    const heroTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".hero-container",
+        start: "1% top",
+        end: "bottom top",
+        scrub: true,
+      },
+    });
+
+    heroTl.to(".hero-container", {
+      rotate: 15,
+      scale: 0.9,
+      yPercent: 30,
+      ease: "power1.inOut",
+    });
+
     gsap.from(".Hover-title", {
-      y: 100,
+      y: 50,
       opacity: 0,
-      delay: 0.5,
-      duration: 0.5,
+      delay: 1,
+      duration: 0.8,
     });
 
     // herman
@@ -41,47 +57,49 @@ const Hero = () => {
 
   return (
     <section className="relative p-0">
-      <div className="w-full h-screen overflow-clip flex flex-col">
-        <Particles
-          particleColors={["#ffffff", "#ffffff"]}
-          particleCount={900}
-          particleSpread={40}
-          speed={0.3}
-          particleBaseSize={100}
-          moveParticlesOnHover={true}
-          alphaParticles={false}
-          disableRotation={true}
-        />
+      <div className="hero-container">
+        <div className="w-full h-screen overflow-clip flex flex-col">
+          <Particles
+            particleColors={["#ffffff", "#ffffff"]}
+            particleCount={900}
+            particleSpread={40}
+            speed={0.3}
+            particleBaseSize={100}
+            moveParticlesOnHover={true}
+            alphaParticles={false}
+            disableRotation={true}
+          />
 
-        <div className="Hover-title p-4 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white">
-          <div>
-            <h1
-              ref={textRef}
-              className="text-[clamp(2rem,5vw+1rem,5rem)] text-nowrap  font-semibold"
-            >
-              iman jafari
-            </h1>
-          </div>
-          <div className="text-center">
-            <ShinyText
-              text="I am a Front-End Developer !"
-              disabled={false}
-              speed={3}
-              className="shiny-text text-[12px]"
-            />
+          <div className="Hover-title p-4 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white">
+            <div>
+              <h1
+                ref={textRef}
+                className="text-[clamp(2rem,5vw+1rem,5rem)] text-nowrap  font-semibold"
+              >
+                iman jafari
+              </h1>
+            </div>
+            <div className="text-center">
+              <ShinyText
+                text="I am a Front-End Developer !"
+                disabled={false}
+                speed={3}
+                className="shiny-text text-[12px]"
+              />
+            </div>
           </div>
         </div>
-      </div>
-      <div className="absolute left-3/4 top-[20%] transform -translate-x-1/2 -translate-y-1/2">
-        <div className="demo relative w-[400px] h-[400px]">
-          <div className="myshadow absolute w-[150px] h-[20px] bg-[radial-gradient(gray_10%,transparent_40%,black_30%)] left-[125px] top-[290px] bg-no-repeat opacity-0"></div>
-          <div className="hole absolute w-[150px] h-[20px] rounded-[50%] left-[125px] top-[290px] bg-[#0f0f0f] "></div>
-          <div className="hermanWrapper relative //border //border-red h-[305px] w-full rounded-full overflow-hidden">
-            <img
-              className="herman absolute left-[150px] -bottom-[50px] w-[100px]"
-              src="https://assets.codepen.io/32887/herman.svg"
-              alt="Herman the Wizard"
-            />
+        <div className="absolute left-3/4 top-[20%] transform -translate-x-1/2 -translate-y-1/2">
+          <div className="demo relative w-[400px] h-[400px]">
+            <div className="myshadow absolute w-[150px] h-[20px] bg-[radial-gradient(gray_10%,transparent_40%,black_30%)] left-[125px] top-[290px] bg-no-repeat opacity-0"></div>
+            <div className="hole absolute w-[150px] h-[20px] rounded-[50%] left-[125px] top-[290px] bg-[#0f0f0f] "></div>
+            <div className="hermanWrapper relative //border //border-red h-[305px] w-full rounded-full overflow-hidden">
+              <img
+                className="herman absolute left-[150px] -bottom-[50px] w-[100px]"
+                src="https://assets.codepen.io/32887/herman.svg"
+                alt="Herman the Wizard"
+              />
+            </div>
           </div>
         </div>
       </div>

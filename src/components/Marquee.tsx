@@ -4,6 +4,29 @@ import "keen-slider/keen-slider.min.css";
 //data
 import { skills } from "./../../data/index";
 import Title from "./Title";
+// icons
+import Html from "../assets/Html.svg?react";
+import Css from "../assets/Css.svg?react";
+import Tailwindcss from "../assets/Tailwindcss.svg?react";
+import Sass from "../assets/Sass.svg?react";
+import Materiaui from "../assets/Materiaui.svg?react";
+import Docker from "../assets/Docker.svg?react";
+import Drizzle from "../assets/Drizzle.svg?react";
+import Git from "../assets/Git.svg?react";
+import Github from "../assets/Github.svg?react";
+import Graphql from "../assets/Graphql.svg?react";
+import Javascript from "../assets/Javascript.svg?react";
+import Typescript from "../assets/Typescript.svg?react";
+import Nextjs from "../assets/Nextjs.svg?react";
+import ReactQuery from "../assets/ReactQuery.svg?react";
+import Redux from "../assets/Redux.svg?react";
+import React from "../assets/React.svg?react";
+import Shadcn from "../assets/Shadcn.svg?react";
+import Zustand from "../assets/Zustand.svg?react";
+import Gsap from "../assets/Gsap.svg?react";
+
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const oneThirdLength = Math.floor(skills.length / 3);
 
@@ -31,13 +54,52 @@ const Marquee = () => {
     },
   });
 
+  useGSAP(() => {
+    const iconsTl = gsap.timeline({
+      delay: 1,
+      scrollTrigger: {
+        trigger: ".icons",
+        start: "top center",
+        end: "top-=50% top",
+      },
+    });
+    iconsTl.from(".icon", {
+      yPercent: 100,
+      stagger: 0.1,
+      ease: "power1.inOut",
+      opacity: 0,
+    });
+  });
+
   return (
     <section className="relative overflow-hidden">
-      <Title>Skills</Title>
-      <div className="marquee h-auto w-[100dvw] overflow-hidden relative">
+      <Title className="text-amber-500">Skills</Title>
+      <div className="icons flex justify-center items-center gap-2 mt-10">
+        <Html className="icon" />
+        <Css className="icon" />
+        <Tailwindcss className="icon" />
+        <Sass className="icon" />
+        <Materiaui className="icon" />
+        <Docker className="icon" />
+        <Drizzle className="icon bg-white rounded-full" />
+        <Git className="icon" />
+        <Github className="icon" />
+        <Graphql className="icon" />
+        <Javascript className="icon" />
+        <Typescript className="icon" />
+        <Nextjs className="icon" />
+        <ReactQuery className="icon" />
+        <Redux className="icon" />
+        <React className="icon" />
+        <Shadcn className="icon bg-white rounded-full" />
+        <Zustand className="icon" />
+        <Gsap className="icon" />
+      </div>
+      <div className="marquee h-auto w-full overflow-hidden relative">
         <div className="gradient-edge" />
         <div className="gradient-edge" />
-        <div className="space-y-5 md:space-y-10 text-amber-500 mt-48">
+
+        <div className="space-y-5 md:space-y-10 text-amber-500 mt-32">
           <div ref={sliderRef} className="keen-slider">
             {skills
               .slice(0, oneThirdLength)
