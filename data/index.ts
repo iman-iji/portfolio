@@ -167,11 +167,12 @@ export const skills = [
   //   icon: SiVim,
   // },
 ];
+import photo from "/src/assets/photo.png";
 
 export const expCards = [
   {
     date: "January 2023 - Present",
-    logoPath: "/src/assets/photo.jpg",
+    logoPath: photo,
     description:
       "Hi, I'm Iman — a junior front-end developer with a big passion for building clean, responsive, and user-friendly websites. Although I'm just starting out and don't have professional experience yet, I've spent a lot of time learning modern web technologies like HTML, CSS, JavaScript, and React. I enjoy turning ideas into real products and I'm always excited to take on new challenges that help me grow as a developer. I'm a quick learner, a good team player, and always ready to improve.",
     MilitaryServiceStatus: "Completed",
