@@ -174,5 +174,43 @@ export const expCards = [
     logoPath: "/src/assets/photo.jpg",
     description:
       "Hi, I'm Iman — a junior front-end developer with a big passion for building clean, responsive, and user-friendly websites. Although I'm just starting out and don't have professional experience yet, I've spent a lot of time learning modern web technologies like HTML, CSS, JavaScript, and React. I enjoy turning ideas into real products and I'm always excited to take on new challenges that help me grow as a developer. I'm a quick learner, a good team player, and always ready to improve.",
+    MilitaryServiceStatus: "Completed",
+    MaritalStatus: "Single",
+    Bachelor: "Engineering Physics",
+  },
+];
+
+export const projects = [
+  {
+    img: "/src/assets/berlan.png",
+    descriptoin:
+      "I developed an e-commerce store project for our family shop to challenge and improve my front-end development skills. In this project, I independently handled all aspects of the front end.",
+    libraries:
+      "Next.js, Tailwind , Shadcn, zustand, gitflow, and Leaflet (a JavaScript library for interactive maps),...",
+  },
+  {
+    img: "/src/assets/book2.png",
+    descriptoin:
+      "This project I developed is a book borrowing website with both light and dark themes, and my main goal was to practice working with Drizzle ORM and data loading.",
+    libraries:
+      "Next.js, Tailwind, Shadcn, TypeScript, NextAuth, Upstash Redis, ImageKit, Drizzle,",
+  },
+  {
+    img: "/src/assets/gsap.png",
+    descriptoin:
+      "I created a landing page project with the main goal of practicing GSAP for animations and interactive effects, while also getting familiar with the challenges of animation and learning how to handle them effectively.",
+    libraries: "Vite, Tailwind, Gsap, react-svgr, react-responsive",
+  },
+  {
+    img: "/src/assets/Gap.png",
+    descriptoin:
+      " I developed a chat application that not only supports real-time messaging but also includes video call functionality.",
+    libraries: "Next.js, Tailwind, Shadcn, TypeScript, WebSockets, JWT tokens,",
+  },
+  {
+    img: "/src/assets/bot.png",
+    descriptoin:
+      "I developed a Telegram bot using JavaScript, where I also integrated Cloudflare to enhance performance and reliability. The main goal was to gain hands-on experience with bot development and explore how to work with Cloudflare services.",
+    libraries: "Js , cloudflare ,KV, telegram-api",
   },
 ];

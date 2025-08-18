@@ -27,6 +27,12 @@ function App() {
         <Marquee />
         <AboutMe />
         <Projects />
+        <div className="h-[100vh] text-amber-400">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius nemo
+          repudiandae aliquid sapiente, sed adipisci alias tempora ipsum nihil
+          ratione ab aliquam in accusantium perspiciatis vitae dicta. A,
+          deleniti consequuntur.
+        </div>
       </div>
     </main>
   );
