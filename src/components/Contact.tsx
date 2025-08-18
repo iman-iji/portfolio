@@ -1,4 +1,3 @@
-import React from "react";
 import Title from "./Title";
 
 import { MdOutlineEmail } from "react-icons/md";

@@ -9,7 +9,10 @@ import { projects } from "../../data";
 const Projects = () => {
   const sliderRef = useRef<HTMLDivElement>(null);
   useGSAP(() => {
-    const scrollAmount = sliderRef.current.scrollWidth - window.innerWidth;
+    let scrollAmount = 0;
+    if (sliderRef.current) {
+      scrollAmount = sliderRef.current.scrollWidth - window.innerWidth;
+    }
 
     const tl = gsap.timeline({
       scrollTrigger: {
