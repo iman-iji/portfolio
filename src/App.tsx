@@ -2,6 +2,7 @@ import AboutMe from "./components/AboutMe";
 import Hero from "./components/Hero";
 import Marquee from "./components/Marquee";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 //gsap
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -27,12 +28,7 @@ function App() {
         <Marquee />
         <AboutMe />
         <Projects />
-        <div className="h-[100vh] text-amber-400">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius nemo
-          repudiandae aliquid sapiente, sed adipisci alias tempora ipsum nihil
-          ratione ab aliquam in accusantium perspiciatis vitae dicta. A,
-          deleniti consequuntur.
-        </div>
+        <Contact />
       </div>
     </main>
   );
