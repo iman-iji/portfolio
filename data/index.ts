@@ -167,7 +167,7 @@ export const skills = [
   //   icon: SiVim,
   // },
 ];
-import photo from "/src/assets/photo.png";
+import photo from "/src/assets/photo.jpg";
 
 export const expCards = [
   {
