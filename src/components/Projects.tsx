@@ -6,33 +6,40 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { projects } from "../../data";
 
+import { useMediaQuery } from "react-responsive";
+
 const Projects = () => {
   const sliderRef = useRef<HTMLDivElement>(null);
+  const isTablet = useMediaQuery({
+    query: "(max-width: 1023px)",
+  });
+
   useGSAP(() => {
     let scrollAmount = 0;
     if (sliderRef.current) {
       scrollAmount = sliderRef.current.scrollWidth - window.innerWidth;
     }
+    if (!isTablet) {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".projects-section",
+          start: "-2% top",
+          end: `+=${scrollAmount + 1500}px`,
+          scrub: true,
+          pin: true,
+        },
+      });
 
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".projects-section",
-        start: "-2% top",
-        end: `+=${scrollAmount + 1500}px`,
-        scrub: true,
-        pin: true,
-      },
-    });
-
-    tl.to(".projects-section", {
-      x: `-${scrollAmount + 1000}px`,
-      ease: "power1.inOut",
-    });
+      tl.to(".projects-section", {
+        x: `-${scrollAmount + 1000}px`,
+        ease: "power1.inOut",
+      });
+    }
   });
 
   return (
     <section className="h-full projects-section">
-      <Title className=" text-emerald-500">Projects</Title>
+      <Title className=" text-emerald-500 my-24 md:my-0">Projects</Title>
       <div ref={sliderRef} className="slider-wrapper">
         <div className="projects">
           {projects.map((project, index) => (

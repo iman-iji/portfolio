@@ -74,7 +74,7 @@ const Marquee = () => {
   return (
     <section className="relative overflow-hidden">
       <Title className="text-amber-500">Skills</Title>
-      <div className="icons flex justify-center items-center gap-2 mt-10">
+      <div className="icons flex justify-center items-center gap-2 mt-10 flex-wrap">
         <Html className="icon" />
         <Css className="icon" />
         <Tailwindcss className="icon" />
