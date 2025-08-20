@@ -52,7 +52,7 @@ const Hero = () => {
             <div>
               <h1
                 ref={textRef}
-                className="text-[clamp(2rem,5vw+1rem,5rem)] text-nowrap  font-semibold"
+                className="text-[clamp(1.75rem,5vw+1rem,5rem)] text-nowrap  font-semibold"
               >
                 iman jafari
               </h1>

@@ -56,14 +56,14 @@ const AboutMe = () => {
   });
 
   return (
-    <section className="flex-center ">
+    <section className="flex-center mt-3 md:mt-0">
       <div className="w-full h-full">
         <Title className="text-cyan-500">About me</Title>
         <div className="mt-12 relative">
           <div className="relative z-50 xl:space-y-32 space-y-10">
             {list.map((card, index) => (
               <div key={index} className="w-10/12 mx-auto">
-                <div className="relative">
+                <div className="relative mb-3 md:mb-0">
                   <div className="md:size-20 size-10 flex-none rounded-full flex justify-center items-center md:-translate-y-7 border border-cyan-500 bg-cyan-500 overflow-hidden">
                     <img src={card.logoPath} alt="logo" className="z-20" />
                   </div>

@@ -59,10 +59,6 @@
   width: 2px;
   background: linear-gradient(0deg, rgba(69, 222, 196, 0) 0%, #0766ff 100%);
 }
-
-.card:hover::before {
-  opacity: 1;
-}
 @layer utilities {
   section {
     @apply h-10/12 lg:h-screen  md:px-20 px-5 text-white;
