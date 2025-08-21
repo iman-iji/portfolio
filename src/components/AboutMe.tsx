@@ -13,22 +13,6 @@ const AboutMe = () => {
   const [list] = useState(expCards);
 
   useGSAP(() => {
-    gsap.to(".timeline", {
-      transformOrigin: "bottom bottom",
-      ease: "power1.inOut",
-      scrollTrigger: {
-        trigger: ".timeline",
-        start: "top center",
-        end: "70% center",
-
-        onUpdate: (self) => {
-          gsap.to(".timeline", {
-            scaleY: 1 - self.progress,
-          });
-        },
-      },
-    });
-
     const contentTl = gsap.timeline({
       scrollTrigger: {
         trigger: ".description",

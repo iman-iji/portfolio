@@ -5,6 +5,9 @@ import ShinyText from "../ui/ShinyText/ShinyText";
 //gsap
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { SplitText } from "gsap/SplitText";
+// components
+import ContactLinks from "./ContactLinks";
 
 const Hero = () => {
   const textRef = useRef<HTMLDivElement>(null);
@@ -25,12 +28,31 @@ const Hero = () => {
       ease: "power1.inOut",
     });
 
-    gsap.from(".Hover-title", {
-      y: 50,
-      opacity: 0,
-      delay: 1,
-      duration: 0.8,
+    const titleTl = gsap.timeline({
+      delay: 0.5,
     });
+    const title = SplitText.create(textRef.current, {
+      type: "chars",
+      linesClass: "paragraph-line",
+    });
+
+    titleTl
+      .from(title.chars, {
+        yPercent: 50,
+        ease: "power4.inOut",
+        duration: 1.5,
+        stagger: 0.1,
+        opacity: 0,
+      })
+      .from(
+        ".shiny-text",
+        {
+          opacity: 0,
+          y: 10,
+        },
+        ">+=0.2"
+      )
+      .from(".links", { opacity: 0, duration: 2, ease: "bounce.in" });
   });
 
   return (
@@ -67,6 +89,9 @@ const Hero = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="links absolute bottom-0 left-0">
+        <ContactLinks />
       </div>
     </section>
   );
