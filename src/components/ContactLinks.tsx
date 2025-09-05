@@ -6,7 +6,7 @@ import { FaTelegram } from "react-icons/fa";
 const links = [
   {
     name: "Telegram",
-    url: "https://t.me/Qa_typd",
+    url: "https://t.me/@iman_iji",
     icon: <FaTelegram size={24} />,
   },
   {
