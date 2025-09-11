@@ -174,7 +174,7 @@ export const expCards = [
     date: "January 2023 - Present",
     logoPath: photo,
     description:
-      "Hi, I'm Iman — a junior front-end developer with a big passion for building clean, responsive, and user-friendly websites. Although I'm just starting out and don't have professional experience yet, I've spent a lot of time learning modern web technologies like HTML, CSS, JavaScript, and React. I enjoy turning ideas into real products and I'm always excited to take on new challenges that help me grow as a developer. I'm a quick learner, a good team player, and always ready to improve.",
+      "Hi, I'm Iman — a junior front-end developer passionate about creating clean, responsive, and user-friendly web applications. I have focused on mastering React and Next.js, and my goal is to become a full-stack JavaScript developer. Currently, I am expanding my skills by learning Node.js to build complete end-to-end applications.I enjoy turning ideas into real products and thrive on challenges that help me grow as a developer. I am a fast learner, a collaborative team player, and always eager to improve and contribute to meaningful projects.",
     MilitaryServiceStatus: "Completed",
     MaritalStatus: "Single",
     Bachelor: "Engineering Physics",
@@ -182,10 +182,11 @@ export const expCards = [
 ];
 
 import berlan from "/src/assets/berlan.png";
-import book from "/src/assets/book2.png";
+import resume from "/src/assets/resume.png";
 import gsap from "/src/assets/gsap.png";
 import gap from "/src/assets/Gap.png";
 import bot from "/src/assets/bot.png";
+
 export const projects = [
   {
     img: berlan,
@@ -195,11 +196,11 @@ export const projects = [
       "Next.js, Tailwind , Shadcn, zustand, gitflow, and Leaflet (a JavaScript library for interactive maps),...",
   },
   {
-    img: book,
+    img: resume,
     descriptoin:
-      "This project I developed is a book borrowing website with both light and dark themes, and my main goal was to practice working with Drizzle ORM and data loading.",
+      "This project, with the help of AI, can compare your resume with the job you're applying for and provide you with the results.",
     libraries:
-      "Next.js, Tailwind, Shadcn, TypeScript, NextAuth, Upstash Redis, ImageKit, Drizzle,",
+      "Tailwind, Shadcn, TypeScript, gsap, react-router, i18next, lucide-react",
   },
   {
     img: gsap,

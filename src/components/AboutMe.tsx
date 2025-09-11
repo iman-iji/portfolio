@@ -46,18 +46,18 @@ const AboutMe = () => {
         <div className="mt-12 relative">
           <div className="relative z-50 xl:space-y-32 space-y-10">
             {list.map((card, index) => (
-              <div key={index} className="w-10/12 mx-auto">
+              <div key={index} className="">
                 <div className="relative mb-3 md:mb-0">
                   <div className="md:size-20 size-10 flex-none rounded-full flex justify-center items-center md:-translate-y-7 border border-cyan-500 bg-cyan-500 overflow-hidden">
                     <img src={card.logoPath} alt="logo" className="z-20" />
                   </div>
                 </div>
 
-                <div className="description">
-                  <p className="text-sm sm:text-base md:text-lg lg:text-xl">
+                <div className="description max-w-[80%] mx-auto">
+                  <p className="text-[12px] sm:text-base md:text-lg lg:text-xl">
                     {card.description}
                   </p>
-                  <ol className="ol p-5 list-disc">
+                  <ol className="ol p-5 list-disc text-xs md:text-xl">
                     <li>
                       <span>
                         Military Service Status: {card.MilitaryServiceStatus}
