@@ -53,10 +53,11 @@ const AboutMe = () => {
                   </div>
                 </div>
 
-                <div className="description max-w-[80%] mx-auto">
-                  <p className="text-[12px] sm:text-base md:text-lg lg:text-xl">
+                <div className="description w-10/12 mx-auto">
+                  <p className="text-[11px] sm:text-base md:text-lg lg:text-xl">
                     {card.description}
                   </p>
+
                   <ol className="ol p-5 list-disc text-xs md:text-xl">
                     <li>
                       <span>
