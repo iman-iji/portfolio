@@ -97,6 +97,6 @@ export const socials = [
     name: "Email",
     href: "mailto:imancx.cx@gmail.com",
   },
-  { name: "GitHub", href: "https://github.com/kaRIOz" },
+  { name: "GitHub", href: "https://github.com/iman-iji" },
   { name: "linkedin", href: "https://linkedin.com/in/iman-jafari-cx" },
 ];
