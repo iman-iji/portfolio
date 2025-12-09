@@ -78,15 +78,15 @@ export const projects = [
     id: 1,
     name: "Bazarinet",
     description:
-      "An online store specializing in phone accessories including cases, chargers, cables, and power banks with MagSafe compatibility.",
+      "An online store offering a wide variety of products, including clothing, phone accessories, and more.",
     href: "",
     image: "/assets/projects/mobile-accessories-store.jpg",
     bgImage: "/assets/backgrounds/blanket.jpg",
     frameworks: [
       { id: 1, name: "React" },
       { id: 2, name: "Next.js" },
-      { id: 3, name: "Node.js" },
-      { id: 4, name: "MongoDB" },
+      { id: 3, name: "React Query" },
+      { id: 4, name: "Zustand" },
       { id: 5, name: "Tailwind CSS" },
     ],
   },
