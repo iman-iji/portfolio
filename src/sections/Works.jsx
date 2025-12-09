@@ -166,13 +166,13 @@ const Works = () => {
         {/* desktop Flaoting preview image */}
         <div
           ref={previewRef}
-          className="fixed -top-2/6 left-0 z-50 overflow-hidden border-8 border-black pointer-events-none w-[960px] md:block hidden opacity-0"
+          className="fixed -top-2/6 left-0 z-50 overflow-hidden border-8 border-black pointer-events-none w-[680px] h-[400px] md:block hidden opacity-0"
         >
           {currentIndex !== null && (
             <img
               src={projects[currentIndex].image}
               alt="preview"
-              className="object-cover w-full h-full"
+              className="object-contain w-full h-full bg-white"
             />
           )}
         </div>

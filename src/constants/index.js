@@ -80,7 +80,7 @@ export const projects = [
     description:
       "An online store offering a wide variety of products, including clothing, phone accessories, and more.",
     href: "",
-    image: "/assets/projects/mobile-accessories-store.jpg",
+    image: "./../images/bazarinet.png",
     bgImage: "/assets/backgrounds/blanket.jpg",
     frameworks: [
       { id: 1, name: "React" },
@@ -96,12 +96,12 @@ export const projects = [
     description:
       "A clothing store offering top-quality, stylish apparel at the most affordable prices for every customer.",
     href: "https://bazarinet.ir",
-    image: "/assets/projects/mobile-accessories-store.jpg",
+    image: "./../images/berlanshop.png",
     bgImage: "/assets/backgrounds/blanket.jpg",
     frameworks: [
       { id: 1, name: "PostgreSQL" },
       { id: 2, name: "FullStack Next.js" },
-      { id: 3, name: "React Query" },
+      { id: 3, name: "Leaflet" },
       { id: 4, name: "Zustand" },
       { id: 5, name: "Tailwind CSS" },
     ],
