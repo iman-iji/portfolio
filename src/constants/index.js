@@ -81,7 +81,7 @@ export const projects = [
       "An online store offering a wide variety of products, including clothing, phone accessories, and more.",
     href: "",
     image: "./../images/bazarinet.png",
-    bgImage: "/assets/backgrounds/blanket.jpg",
+    bgImage: "./../images/bazarinet.png",
     frameworks: [
       { id: 1, name: "React" },
       { id: 2, name: "Next.js" },
@@ -97,7 +97,7 @@ export const projects = [
       "A clothing store offering top-quality, stylish apparel at the most affordable prices for every customer.",
     href: "",
     image: "./../images/berlanshop.png",
-    bgImage: "/assets/backgrounds/blanket.jpg",
+    bgImage: "./../images/berlanshop.png",
     frameworks: [
       { id: 1, name: "PostgreSQL" },
       { id: 2, name: "FullStack Next.js" },
@@ -113,7 +113,7 @@ export const projects = [
       "developed a chat application that not only supports real-time messaging but also includes video call functionality.",
     href: "",
     image: "./../images/gap-chat.png",
-    bgImage: "/assets/backgrounds/blanket.jpg",
+    bgImage: "./../images/gap-chat.png",
     frameworks: [
       { id: 1, name: "Websocket" },
       { id: 2, name: "Next.js" },
@@ -129,7 +129,7 @@ export const projects = [
       "created a landing page project with the main goal of practicing GSAP for animations and interactive effects, while also getting familiar with the challenges of animation and learning how to handle them effectively.",
     href: "",
     image: "./../images/gsap.png",
-    bgImage: "/assets/backgrounds/blanket.jpg",
+    bgImage: "./../images/gsap.png",
     frameworks: [
       { id: 1, name: "gsap" },
       { id: 2, name: "Vite" },

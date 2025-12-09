@@ -172,7 +172,7 @@ const Works = () => {
             <img
               src={projects[currentIndex].image}
               alt="preview"
-              className="object-contain w-full h-full bg-white"
+              className="object-cover mg:object-contain w-full h-full bg-white"
             />
           )}
         </div>
