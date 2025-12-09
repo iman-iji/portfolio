@@ -107,7 +107,7 @@ export const projects = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     name: "Gap Chat",
     description:
       "developed a chat application that not only supports real-time messaging but also includes video call functionality.",
@@ -120,6 +120,20 @@ export const projects = [
       { id: 3, name: "Database" },
       { id: 4, name: "Zustand" },
       { id: 5, name: "Tailwind CSS" },
+    ],
+  },
+  {
+    id: 4,
+    name: "GSAP landing",
+    description:
+      "created a landing page project with the main goal of practicing GSAP for animations and interactive effects, while also getting familiar with the challenges of animation and learning how to handle them effectively.",
+    href: "",
+    image: "./../images/gsap.png",
+    bgImage: "/assets/backgrounds/blanket.jpg",
+    frameworks: [
+      { id: 1, name: "gsap" },
+      { id: 2, name: "Vite" },
+      { id: 3, name: "Tailwind CSS" },
     ],
   },
 ];
